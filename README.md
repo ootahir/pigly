@@ -42,5 +42,6 @@ $ php artisan db:seed
 - nginx 1.21.1
 
 ## ER図
+<img width="1465" height="1500" alt="ER" src="https://github.com/user-attachments/assets/3c964cd9-ca34-4646-a9c2-6cf53de187e5" />
 
 
