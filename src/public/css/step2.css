@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #d7b2ea 0%, #f39bc0 48%, #f8c9bc 100%);
+    font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 430px;
+    padding: 44px 44px 36px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    text-align: center;
+    font-size: 2.4rem;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: #d07ad4;
+    margin-bottom: 8px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.step-label {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #888888;
+    margin-bottom: 26px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #444444;
+}
+
+.weight-field {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.weight-field input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 14px;
+    border: 1.5px solid #e3e3e3;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #333333;
+    background: #ffffff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.weight-field input::placeholder {
+    color: #c7c7c7;
+}
+
+.weight-field input:focus {
+    border-color: #d07ad4;
+}
+
+.unit {
+    width: 24px;
+    color: #555555;
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+.error {
+    display: block;
+    margin-top: 6px;
+    color: #e05a5a;
+    font-size: 0.78rem;
+}
+
+.error+.error {
+    margin-top: 4px;
+}
+
+.form-action {
+    margin-top: 30px;
+}
+
+.btn-submit {
+    display: block;
+    width: 52%;
+    min-width: 180px;
+    margin: 0 auto;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #a79be0 0%, #ec8fc2 100%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-submit:hover {
+    opacity: 0.88;
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.back-link a {
+    color: #a97fd0;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.back-link a:hover {
+    opacity: 0.75;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        padding: 40px 24px 32px;
+    }
+
+    .btn-submit {
+        width: 100%;
+        min-width: 0;
+    }
+}
