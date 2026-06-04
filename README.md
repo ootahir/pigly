@@ -4,7 +4,7 @@
 
 ```bash
 $ git clone git@github.com:yukit4mu/pigly.git
-$ cd mogitate
+$ cd pigly
 $ docker-compose up -d --build
 ```
 
